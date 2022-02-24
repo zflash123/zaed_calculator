@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,7 +49,11 @@ class _FormKalkulasi extends State<FormKalkulasi> {
             children: <Widget>[
               Text(
                 "Hasil Perhitungan : $hasil\n",
-                style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500)
+                textAlign: TextAlign.start,
+                style: GoogleFonts.roboto(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
               TextField(
                 keyboardType: TextInputType.number,
