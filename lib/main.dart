@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Retrieve Text Input',
       home: FormKalkulasi(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -36,6 +37,7 @@ class _FormKalkulasi extends State<FormKalkulasi> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(title: const Text("Kalkulator")),
         body: Column(
