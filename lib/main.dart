@@ -110,11 +110,11 @@ class _FormKalkulasi extends State<FormKalkulasi> {
               children: <Widget>[
                 ElevatedButton(
                   onPressed: () {
-                    // setState(() {
-                    //   int input1 = int.parse(myController1.text);
-                    //   int input2 = int.parse(myController2.text);
-                    //   hasil = (input1+input2) as double;
-                    // });
+                    setState(() {
+                      int input1 = int.parse(myController1.text);
+                      int input2 = int.parse(myController2.text);
+                      hasil = (input1+input2) as double;
+                    });
                   },
                   child: const Text('+'),
                   style: ElevatedButton.styleFrom(
