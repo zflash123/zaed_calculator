@@ -49,7 +49,6 @@ class _FormKalkulasi extends State<FormKalkulasi> {
             children: <Widget>[
               Text(
                 "Hasil Perhitungan : $hasil\n",
-                textAlign: TextAlign.start,
                 style: GoogleFonts.roboto(
                   fontSize: 20.0,
                   fontWeight: FontWeight.w500,
